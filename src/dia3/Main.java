@@ -14,14 +14,26 @@ public class Main {
         
         Bicycle bicycle1;
         Bicycle bicycle2;
+        Bicycle bicycle3;
         
         bicycle1 = new Bicycle(2500, "trueno");
-        bicycle2 = new Bicycle(2500, "trueno", 5);
+        bicycle2 = new Bicycle(3000, "trueno", 5);
+        bicycle3 = new Bicycle(4000, "toshiba");
         
         System.out.println(bicycle1.getPrice());
         System.out.println(bicycle1.getBrand());
         System.out.println(bicycle1.getStates());
         System.out.println(bicycle2.getStates());
         
+        
+        System.out.println("bicycle 3");
+        System.out.println("change states");
+        System.out.println(bicycle3.getStates());
+        bicycle3.incrementSpeed();
+        bicycle3.incrementSpeed();
+        bicycle3.incrementSpeed();
+        bicycle3.incrementSpeed();
+        bicycle3.incrementSpeed();
+        System.out.println(bicycle3.getStates());
     }
 }

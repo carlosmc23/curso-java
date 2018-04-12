@@ -15,7 +15,7 @@ public class Bicycle {
     private int speed = 0;
     private int gear = 1;
     private double price;
-    String brand;
+    private String brand;
 
     public Bicycle(double price, String brand) {
         this.price = price;
@@ -47,5 +47,10 @@ public class Bicycle {
     public String getBrand() {
         return this.brand;
     }
+    public void incrementSpeed(){
+        this.speed=this.speed+1;
+    }
+    
+    
 
 }
