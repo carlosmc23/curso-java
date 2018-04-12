@@ -47,13 +47,25 @@ public class Bicycle {
     public String getBrand() {
         return this.brand;
     }
-    public void incrementSpeed(){
-        this.speed=this.speed+1;
+
+    public void incrementSpeed() {
+        this.speed = this.speed + 1;
     }
-    public void incrementSpeed(int speed){
-        this.speed=this.speed+speed;
+
+    public void incrementSpeed(int increment) {
+        this.speed = this.speed + increment;
     }
-    
-    
+
+    public void aplybrakes(int decrement) {
+        if (decrement <= this.speed) {
+            this.speed = this.speed - decrement;
+        } else {
+            this.speed = 0;
+        }
+    }
+
+    public void aplybrakes(){
+        this.speed = this.speed - 1;
+    }
 
 }
