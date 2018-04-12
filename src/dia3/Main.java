@@ -5,6 +5,10 @@
  */
 package dia3;
 
+import dia2.Person;
+import dia2.Teacher;
+
+
 /**
  *
  * @author carlos
@@ -15,10 +19,16 @@ public class Main {
         Bicycle bicycle1;
         Bicycle bicycle2;
         Bicycle bicycle3;
+        Bicycle bicycle4;
+        
+        Person owner4;
+        
+        owner4 = new Teacher("ingeniero", "angel", "antezana", "may, 24, 1990", "364553445234");
         
         bicycle1 = new Bicycle(2500, "trueno");
         bicycle2 = new Bicycle(3000, "trueno", 5);
         bicycle3 = new Bicycle(4000, "toshiba");
+        bicycle4 = new Bicycle(6000, "toyota",owner4 );
         
         System.out.println(bicycle1.getPrice());
         System.out.println(bicycle1.getBrand());
@@ -38,5 +48,10 @@ public class Main {
         bicycle3.aplybrakes(8);
         
         System.out.println(bicycle3.getStates());
+        System.out.println(bicycle4.getStates());
+        
+        
+        
+        
     }
 }

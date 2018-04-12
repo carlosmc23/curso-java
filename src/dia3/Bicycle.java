@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package dia3;
+import dia2.Person;
 
 /**
  *
@@ -16,6 +17,7 @@ public class Bicycle {
     private int gear = 1;
     private double price;
     private String brand;
+    private Person owner;
 
     public Bicycle(double price, String brand) {
         this.price = price;
@@ -27,6 +29,13 @@ public class Bicycle {
         this.brand = brand;
         this.gear = gear;
     }
+    public Bicycle(double price, String brand, Person owner) {
+        this.price = price;
+        this.brand = brand;
+        this.gear = gear;
+        this.owner = owner;
+    }
+    
 
     public void changeGear(int gear) {
         this.gear = gear;
@@ -37,7 +46,7 @@ public class Bicycle {
     }
 
     public String getStates() {
-        return "Cadence: " + this.cadence + "Speed: " + this.speed + "Gear: " + this.gear;
+        return "Cadence: " + this.cadence + "Speed: " + this.speed + "Gear: " + this.gear + "owner: "+ this.owner;
     }
 
     public double getPrice() {
