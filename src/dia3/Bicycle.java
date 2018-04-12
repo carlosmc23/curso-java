@@ -50,6 +50,9 @@ public class Bicycle {
     public void incrementSpeed(){
         this.speed=this.speed+1;
     }
+    public void incrementSpeed(int speed){
+        this.speed=this.speed+speed;
+    }
     
     
 

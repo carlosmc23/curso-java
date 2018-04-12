@@ -32,8 +32,8 @@ public class Main {
         bicycle3.incrementSpeed();
         bicycle3.incrementSpeed();
         bicycle3.incrementSpeed();
-        bicycle3.incrementSpeed();
-        bicycle3.incrementSpeed();
+        bicycle3.incrementSpeed(7);
+        bicycle3.incrementSpeed(9);
         System.out.println(bicycle3.getStates());
     }
 }
