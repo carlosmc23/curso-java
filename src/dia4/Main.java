@@ -19,11 +19,22 @@ public class Main {
         
         Teacher teacher1 = new Teacher("doctor", "carlos", "menseses", "24, may, 1990", "345435345");
         Student student2 = new Student("234234234", "jorge", "beeltran", "45, dec, 20000", "345345345");
+        Student student3 = new Student("gdfgdf", "juan", "cossio", "45, dec, 2012", "23452345");
         
         
         university1.addPerson(teacher1);
         university1.addPerson(student2);
+        university1.addPerson(student3);
         
         university1.showListPerson();
+        
+        //termina ejemplo de arreglos estaticos
+        
+        System.out.println("Generic class: ");
+        
+        Box<Teacher, Student> box1 = new Box<>(teacher1, student3);
+        
+        System.out.println(box1);
+        
     }
 }

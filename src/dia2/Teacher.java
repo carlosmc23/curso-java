@@ -29,5 +29,9 @@ public class Teacher extends Person {
     public String gretting() {
         return "hello, Iam a Teacher my profesion is "+this.profesion;
     }
+    
+
+   
+    
 
 }
